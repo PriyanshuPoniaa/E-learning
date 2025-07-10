@@ -1,0 +1,25 @@
+.content-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+/* This makes the box scrollable if content is long */
+.scrollable-content {
+  max-height: 80vh; /* you can adjust height as needed */
+  overflow-y: auto;
+}

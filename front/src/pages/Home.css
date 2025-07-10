@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2235; /* dark background */
+  color: #fff;
+  padding: 80px 10%;
+}
+
+.home-content {
+  max-width: 50%;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.home-content button {
+  background-color: #ff7a01;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-content button:hover {
+  background-color: #e06600;
+}
+
+.home-image img {
+  width: 500px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Available Courses */
+.available-courses-section {
+  background-color: #282c45;
+  color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.available-courses-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.course-list-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-card-home {
+  background-color: #373c59;
+  border: 1px solid #444;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.course-card-home h4 {
+  margin-top: 0;
+  color: #ff7a01;
+}
+
+.course-card-home p {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.course-card-home a {
+  color: #ff7a01;
+  text-decoration: none;
+}
+
+.course-card-home a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section - separate colored block */
+.contact-section.custom-contact-block {
+  background-color: #2d3148; /* new distinct color */
+  color: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #bbb;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #373c59;
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  background-color: #ff7a01;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e06600;
+}

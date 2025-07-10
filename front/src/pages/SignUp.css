@@ -1,0 +1,219 @@
+/* SignUp.css */
+
+/* .signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff7a01,blue);
+  padding: 20px;
+}
+
+.signup-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.signup-box:hover {
+  transform: translateY(-5px);
+}
+
+.signup-box h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box select,
+.signup-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-box select:focus,
+.signup-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.signup-box button {
+  background-color: #ff7a01;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-box button:hover {
+  background-color: #ff5500;
+  transform: scale(1.05);
+}
+
+.signup-box p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-box p a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.signup-box p a:hover {
+  color: #ffd6c0;
+} */
+
+/* SignUp.css */
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, red, green);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flower animation styles */
+.flower {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #ff69b4 40%, #ff1493 100%);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatFlower linear infinite;
+}
+
+@keyframes floatFlower {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.signup-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.signup-box:hover {
+  transform: translateY(-5px);
+}
+
+.signup-box h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.signup-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box select,
+.signup-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-box select:focus,
+.signup-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.signup-box button {
+  background-color: #ff7a01;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-box button:hover {
+  background-color: #ff5500;
+  transform: scale(1.05);
+}
+
+.signup-box p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup-box p a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.signup-box p a:hover {
+  color: #ffd6c0;
+}
+
+/* Fix placeholder text color */
+.signup-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signup-box select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+
+.signup-box select option {
+  background: white;
+  color: #444;
+}

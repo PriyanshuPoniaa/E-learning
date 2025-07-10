@@ -1,0 +1,53 @@
+.enrollment-page {
+  padding: 30px;
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+.enrollment-page h2, .enrollment-page h3 {
+  text-align: center;
+  color: #0077cc;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 240px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h4 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+.course-card button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.course-card button:hover {
+  background-color: #005fa3;
+}
+
+.enrollment-page ul {
+  list-style-type: disc;
+  margin-top: 20px;
+  padding-left: 40px;
+  color: #333;
+}

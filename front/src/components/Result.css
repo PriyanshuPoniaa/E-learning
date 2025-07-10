@@ -1,0 +1,8 @@
+.result-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}

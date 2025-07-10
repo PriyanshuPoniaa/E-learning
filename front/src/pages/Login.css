@@ -1,0 +1,113 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, green, blue);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flower styles */
+.flower {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #ff69b4 40%, #ff1493 100%);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatFlower linear infinite;
+}
+
+@keyframes floatFlower {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.login-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 20px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2);
+  color: black; /* Typed text color set to black */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder text color white-ish */
+}
+
+.login-box input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.login-box button {
+  background-color: #ff7a01;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #ff5500;
+  transform: scale(1.05);
+}
+
+.login-box p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-box p a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.login-box p a:hover {
+  color: #ffd6c0;
+}

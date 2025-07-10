@@ -1,0 +1,49 @@
+.student-dashboard {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 0; /* Removed top padding completely */
+  background: linear-gradient(135deg,#87CEEB,purple);
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Bubble base style */
+.student-dashboard::before,
+.student-dashboard::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: floatBubble 20s linear infinite;
+}
+
+/* Bubble 1 */
+.student-dashboard::before {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  left: 10%;
+  bottom: -200px; /* Start below the screen */
+}
+
+/* Bubble 2 */
+.student-dashboard::after {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  right: 15%;
+  bottom: -300px;
+}
+
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-120vh); /* Move up past top of viewport */
+    opacity: 0;
+  }
+}
+
