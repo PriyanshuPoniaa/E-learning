@@ -40,14 +40,14 @@ It serves as a foundational UI for developers or students looking to build a mor
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Technologies Used
+- MongoDB – NoSQL database for storing structured and unstructured data
+- Express.js – Backend framework for handling API requests and routing
+- React – Frontend library for building reusable UI components
+- Node.js – Runtime environment for executing server-side code
+- CSS – Styling, animations, and responsive layouts
+- Vercel – Deployment platform (mostly for frontend; you might use something like Render or Heroku for backend)
 
-- **HTML5** – Markup structure
-- **CSS3** – Styling, animations, responsiveness
-- **JavaScript (Vanilla)** – Form interactivity
-- **Vercel** – Deployment
 
----
 
-## 📁 Folder Structure
 
