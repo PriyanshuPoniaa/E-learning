@@ -10,7 +10,7 @@ A responsive and visually appealing web-based E-Learning platform that provides 
 
 ## 🖼️ Screenshot
 
-![E-Learning Login Page](./screenshot.png)
+![E-Learning]((https://github.com/PriyanshuPoniaa/E-learning/blob/7cc600ef1bd12d63c9dbb305540ccb51ed73d2cb/1.png))
 
 > Save a screenshot of your deployed website as `screenshot.png` in the root directory.
 
