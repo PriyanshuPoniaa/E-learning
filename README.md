@@ -10,7 +10,7 @@ A responsive and visually appealing web-based E-Learning platform that provides 
 
 ## 🖼️ Screenshot
 
-![E-Learning](1.png) (2.png)
+![E-Learning](1.png) ![image](2.png) 
              
 
 ---
